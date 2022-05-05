@@ -1,0 +1,14 @@
+// Mixin Functions
+@mixin size ($widht:null, $height:null) {
+    width: $widht;
+    height: $height;
+}
+@mixin display ($x:null, $y:null) {
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+}
+
+@mixin Mypostion ($case) {
+    position: $case;
+}

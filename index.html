@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&family=Comfortaa:wght@300&family=Lato:wght@700&family=M+PLUS+2&family=Merriweather:wght@300;400&family=Nunito:ital@0;1&family=Poppins:wght@300&family=Work+Sans:ital,wght@0,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    /> -->
+    <!-- <link rel="stylesheet" href="assets/style/slider.css" /> -->
+    <!-- Title Bar -->
+    <title>Hotell</title>
+  </head>
+  <body>
+    <!-- ===============Header Part========================== -->
+    <header>
+      <!--================= Container===================  -->
+      <div class="all_head">
+        <!-- Logo Part -->
+        <div class="logo_box">
+          <a class="logo_name" href="#">Hotell</a>
+        </div>
+        <!-- Toggle Menu Icon -->
+        <a href="#" class="open" onclick="openFunction()" ><i class="fas fa-bars"></i></a>
+        <!-- Navigation Bar -->
+        <nav id="nav">
+          <!-- Navigation Lists   -->
+          <ul class="nav_list">
+            <li><a class="home" href="#">Home</a></li>
+            <!-- Inside List -->
+            <li class="lists">
+              <a class="destination" href="#">Destination</a>
+              <a class="down-click" href="#"
+                ><i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="insideli">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a class="drop" href="#">Dropdown</a><i class="fas fa-chevron-down"></i>
+                            <ul class="insideli2">
+                                <li><a href="#">Sub Menu One</a></li>
+                                <li><a href="#">Sub Menu Two</a></li>
+                                <li><a href="#">Sub Menu Three</a></li>
+                            </ul>
+                        </li>
+              </ul>
+            </li>
+            <!-- Responsive Inside Lists -->
+            <li class="bists">
+              <a class="destination" href="#">Destination</a>
+              <a class="down-click" href="#"
+                ><i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="insideli">
+                        <li><a class="menu_one" href="#">Menu One</a></li>
+                        <li><a class="menu_two" href="#">Menu Two</a></li>
+                        <li class="dropdawn" ><a class="drop" href="#">Dropdown</a><i class="fas fa-chevron-down"></i>
+                            <ul class="insideli2">
+                                <li><a class="sub_one" href="#">Sub Menu One</a></li>
+                                <li><a class="sub_two" href="#">Sub Menu Two</a></li>
+                                <li><a class="sub_three" href="#">Sub Menu Three</a></li>
+                            </ul>
+                        </li>
+              </ul>
+            </li>
+            <li class="serviceli"><a class="service" href="#">Services</a></li>
+            <li><a class="about" href="#">About</a></li>
+            <li><a class="contact" href="#">Contact</a></li>
+            <!-- Close Icon -->
+            <a  class="times" href="#" onclick="closeFunction()">&times;</a>
+          </ul>
+        </nav>
+        <!-- Phone logo -->
+        <div class="phone">
+          <a class="communication" href="#">
+            <span class="icon-iphone">
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span class="phone-sign"> 123-489-9381 </span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Part -->
+    <!-- Start Main Part -->
+    <main>
+      <!-- First Section -->
+    <section id="first">
+      <!-- Overlay -->
+        <div class="cover"></div>
+        <!-- Heading -->
+        <h1 class="heading">
+          Once a year go someplace you've never been before.
+        </h1>
+        <a class="video" href="#">See Video</a>
+    </section>
+    <!-- End First -->
+    <!-- Start Second -->
+    <section id="second">
+      <!-- Date and button Part -->
+        <div class="date_box">
+          <div class="first_calendar">
+            <input
+              placeholder="Date Arrival"
+              class="textbox-n"
+              type="text"
+              onfocus="(this.type='date')"
+              id="date"
+              
+            />
+            <span class="icon_calendar">
+              <i class="far fa-calendar-alt"></i>
+            </span>
+          </div>
+          <div class="second_calendar">
+            <input
+              placeholder="Date Departure"
+              class="textbox-n"
+              type="text"
+              onfocus="(this.type='date')"
+              id="date"
+            />
+            <span class="icon_calendar">
+              <i class="far fa-calendar-alt"></i>
+            </span>
+          </div>
+          <div class="select_person">
+            <select name="person" class="control">
+              <option># of Person</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5+</option>
+            </select>
+            <span class="icon_person">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        <div class="btn_box">
+            <button class="btn">Find now</button>
+        </div>
+        </div>
+        <div class="explore">
+        <h3 class="head_explore">OUR SERVICES</h3>
+        <!-- Boxes -->
+        <div class=" explore_boxes">
+          <!-- Wrapper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+              <figure>
+                <img
+                  class="travel"
+                  src="./assets/images/Project img.png"
+                  alt="travel"
+                />
+              </figure>
+              <h3 class="firstbox_head">Trekking</h3>
+              <p class="firstbox_content">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <a class="more" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+              <figure>
+                <img
+                  class="travel"
+                  src="./assets/images/map.png"
+                  alt="travel"
+                />
+              </figure>
+              <h3 class="firstbox_head">The Map</h3>
+              <p class="firstbox_content">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <a class="more" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+              <figure>
+                <img
+                  class="travel"
+                  src="./assets/images/bag.png"
+                  alt="travelling"
+                />
+              </figure>
+              <h3 class="firstbox_head">Suitcase</h3>
+              <p class="firstbox_content">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <a class="more" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+              <figure>
+                <img
+                  class="travel"
+                  src="./assets/images/rest.png"
+                  alt="Resting"
+                />
+              </figure>
+              <h3 class="firstbox_head">Island Hoping</h3>
+              <p class="firstbox_content">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <a class="more" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+              <figure>
+                <img
+                  class="travel"
+                  src="./assets/images/world round.png"
+                  alt="walking"
+                />
+              </figure>
+              <h3 class="firstbox_head">World Round</h3>
+              <p class="firstbox_content">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <a class="more" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">        
+                <div class="box">
+              <figure>
+                <img class="travel" src="./assets/images/fly.png" alt="plane" />
+              </figure>
+              <h3 class="firstbox_head">Travel with Plane</h3>
+              <p class="firstbox_content">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <a class="more" href="#">Learn More</a>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+              <figure>
+                <img
+                  class="travel"
+                  src="./assets/images/Project img.png"
+                  alt="travel"
+                />
+              </figure>
+              <h3 class="firstbox_head">Trekking</h3>
+              <p class="firstbox_content">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <a class="more" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+              <figure>
+                <img
+                  class="travel"
+                  src="./assets/images/rest.png"
+                  alt="travel"
+                />
+              </figure>
+              <h3 class="firstbox_head">Trekking</h3>
+              <p class="firstbox_content">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <a class="more" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+              <figure>
+                <img
+                  class="travel"
+                  src="./assets/images/map.png"
+                  alt="travel"
+                />
+              </figure>
+              <h3 class="firstbox_head">Trekking</h3>
+              <p class="firstbox_content">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <a class="more" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+              <figure>
+                <img
+                  class="travel"
+                  src="./assets/images/bag.png"
+                  alt="travelling"
+                />
+              </figure>
+              <h3 class="firstbox_head">Suitcase</h3>
+              <p class="firstbox_content">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <a class="more" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="slide_buttons">
+            <button class="slid-button-next">Next</button>
+            <button class="slid-button-prev">Prev</button>
+          </div>
+        </div>
+    </section>
+    <!-- Start Third -->
+    <section id="third">
+      <!-- Picture and Wall -->
+        <div class="viewpart">
+          <div class="blocks">
+            <div class="greenbox"></div>
+            <div class="pictures">
+              <figure>
+                <img
+                  class="view"
+                  src="./assets/images/Project Page.png"
+                  alt="travelling"
+                />
+              </figure>
+            </div>
+          </div>
+          <!-- Content  -->
+          <div class="information_hotel">
+            <h3 class="about_hotel">About Hotell</h3>
+            <p class="content_hotel">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.
+            </p>
+            <p class="content_hotel">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts of sentences fly into your mouth.
+            </p>
+          </div>
+        </div>
+    </section>
+    <!-- Start Fourth Section -->
+    <section id="fourth">
+      <!-- Boxes -->
+        <div class="Blog_part">
+            <h3 class="post">Blog Post</h3>
+            <div class=" Blog_boxes">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                <div class="Blog_box">
+                  <!-- Image Part -->
+                  <figure>
+                    <img class="Blog" src="./assets/images/blog1.webp" alt="foto" />
+                  </figure>
+                  <!-- Icon -->
+                  <div class="icon-pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                  </div>
+                  <!-- About Part -->
+                  <div class="about_blog">
+                    <h3 class="content_blog">
+                      Far far away, behind the word mountains, far from the
+                      countries
+                    </h3>
+                    <a class="link_blog" href="#">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide">
+                <div class="Blog_box">
+                  <figure>
+                    <img class="Blog" src="./assets/images/blog2.webp" alt="resting" />
+                  </figure>
+                  <div class="icon-pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                  </div>
+                  <div class="about_blog">
+                    <h3 class="content_blog">
+                      Far far away, behind the word mountains, far from the
+                      countries
+                    </h3>
+                    <a class="link_blog" href="#">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide">
+                <div class="Blog_box">
+                  <figure>
+                    <img class="Blog" src="./assets/images/blog3.webp" alt="favourite" />
+                  </figure>
+                  <div class="icon-pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                  </div>
+                  <div class="about_blog">
+                    <h3 class="content_blog">
+                      Far far away, behind the word mountains, far from the
+                      countries
+                    </h3>
+                    <a class="link_blog" href="#">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide">
+                <div class="Blog_box">
+                  <figure>
+                    <img class="Blog" src="./assets/images/Project Page.png" alt="place" />
+                  </figure>
+                  <div class="icon-pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                  </div>
+                  <div class="about_blog">
+                    <h3 class="content_blog">
+                      Far far away, behind the word mountains, far from the
+                      countries
+                    </h3>
+                    <a class="link_blog" href="#">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide">
+                <div class="Blog_box">
+                  <figure>
+                    <img class="Blog" src="./assets/images/blog1.webp" alt="foto" />
+                  </figure>
+                  <div class="icon-pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                  </div>
+                  <div class="about_blog">
+                    <h3 class="content_blog">
+                      Far far away, behind the word mountains, far from the
+                      countries
+                    </h3>
+                    <a class="link_blog" href="#">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide">
+                <div class="Blog_box">
+                  <figure>
+                    <img class="Blog" src="./assets/images/blog2.webp" alt="resting" />
+                  </figure>
+                  <div class="icon-pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                  </div>
+                  <div class="about_blog">
+                    <h3 class="content_blog">
+                      Far far away, behind the word mountains, far from the
+                      countries
+                    </h3>
+                    <a class="link_blog" href="#">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide">
+                <div class="Blog_box">
+                  <figure>
+                    <img class="Blog" src="./assets/images/blog3.webp" alt="favourite" />
+                  </figure>
+                  <div class="icon-pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                  </div>
+                  <div class="about_blog">
+                    <h3 class="content_blog">
+                      Far far away, behind the word mountains, far from the
+                      countries
+                    </h3>
+                    <a class="link_blog" href="#">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide">
+                <div class="Blog_box">
+                  <figure>
+                    <img class="Blog" src="./assets/images/Project Page.png" alt="place" />
+                  </figure>
+                  <div class="icon-pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                  </div>
+                  <div class="about_blog">
+                    <h3 class="content_blog">
+                      Far far away, behind the word mountains, far from the
+                      countries
+                    </h3>
+                    <a class="link_blog" href="#">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-buttons">
+            <button class="swiper-button-next">Next</button>
+            <button class="swiper-button-prev">Prev</button>
+            </div>
+        </div>
+    </section>
+    <!-- Start Fifth -->
+    <section id="fifth">
+      <!-- Text Part -->
+        <div class="text">
+            <h2 class="heading-text">Frequently Asked Questions</h2>
+            <!-- Accordion Part -->
+            <div class="accordion">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Is it free?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          How to install this template?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          Where can i get help?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        </div>
+    </section>
+    <!-- Start Sixth -->
+    <section id="sixth">
+      <!-- Contents -->
+      <div class="header-content2">
+          <h2 class="header_2">Testimonials</h2>
+          <p class="content_2">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+      </div>
+      <!-- Boxes -->
+      <div class="Test_boxes">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="test_box">
+              <div class="icon_2">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="content_box">
+                <p class="contents">   
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+              <div class="about_person">
+                <figure>
+                  <img class="work" src="./assets/images/1.webp" alt="workers">
+                </figure>
+                <div class="person_txt">
+                  <strong>John Doe</strong>
+                  <span>Creative Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="test_box">
+              <div class="icon_2">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="content_box">
+                <p class="contents">   
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+              <div class="about_person">
+                <figure>
+                  <img class="work" src="./assets/images/2.webp" alt="workers">
+                </figure>
+                <div class="person_txt">
+                  <strong>John Doe</strong>
+                  <span>Creative Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="test_box">
+              <div class="icon_2">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="content_box">
+                <p class="contents">   
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+              <div class="about_person">
+                <figure>
+                  <img class="work" src="./assets/images/3.webp" alt="workers">
+                </figure>
+                <div class="person_txt">
+                  <strong>John Doe</strong>
+                  <span>Creative Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="test_box">
+              <div class="icon_2">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="content_box">
+                <p class="contents">   
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+              <div class="about_person">
+                <figure>
+                  <img class="work" src="./assets/images/4.webp" alt="workers">
+                </figure>
+                <div class="person_txt">
+                  <strong>John Doe</strong>
+                  <span>Creative Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="test_box">
+              <div class="icon_2">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="content_box">
+                <p class="contents">   
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+              <div class="about_person">
+                <figure>
+                  <img class="work" src="./assets/images/1.webp" alt="workers">
+                </figure>
+                <div class="person_txt">
+                  <strong>John Doe</strong>
+                  <span>Creative Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="test_box">
+              <div class="icon_2">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="content_box">
+                <p class="contents">   
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+              <div class="about_person">
+                <figure>
+                  <img class="work" src="./assets/images/2.webp" alt="workers">
+                </figure>
+                <div class="person_txt">
+                  <strong>John Doe</strong>
+                  <span>Creative Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="test_box">
+              <div class="icon_2">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="content_box">
+                <p class="contents">   
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+              <div class="about_person">
+                <figure>
+                  <img class="work" src="./assets/images/3.webp" alt="workers">
+                </figure>
+                <div class="person_txt">
+                  <strong>John Doe</strong>
+                  <span>Creative Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Buttons -->
+      <div class="test_buttons">
+        <button class="slide_test_button-next">Next</button>
+        <button class="slide_test_button-prev">Prev</button>
+      </div>     
+    </section>
+    <!-- Seventh Section -->
+    <section id="seventh">
+      <!-- Content -->
+      <div class="header-content3">
+        <h2 class="insta">Instagram</h2>
+        <p class="insta_content">
+          A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+        </p>
+      </div>
+      <!-- Boxes -->
+      <div class="Pictures_Insta">   
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+          <div class="picture_box">
+            
+            <figure>
+              <img class="slider_img" src="./assets/images/blog1.webp" alt="travelling">
+            </figure>
+            
+            <div class="box2">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>         
+          </div>
+          <div class="swiper-slide">
+          <div class="picture_box">
+            <figure>
+              <img class="slider_img" src="./assets/images/blog4.2.webp" alt="resting">
+            </figure>
+            <div class="box2">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+          <div class="picture_box">
+            <figure>
+              <img class="slider_img" src="./assets/images/Project Page.png" alt="travelling">
+            </figure>
+            <div class="box2">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+          <div class="picture_box">
+            <figure>
+              <img class="slider_img" src="./assets/images/blog1.webp" alt="travel">
+            </figure>
+            <div class="box2">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+          <div class="picture_box">
+            <figure>
+              <img class="slider_img" src="./assets/images/blog 4.3.webp" alt="joyful">
+            </figure>
+            <div class="box2">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+          <div class="picture_box">
+            <figure>
+              <img class="slider_img" src="./assets/images/blog4.2.webp" alt="entertainment">
+            </figure>
+            <div class="box2">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+          </div>
+        </div>
+    </section>
+    <!-- End SEctions -->
+</main>
+<!-- =============End Main=============== -->
+<!-- ==============Start Footer========== -->
+<footer>
+  <!-- Container -->
+  <div class="container">
+    <!-- Footer Lists -->
+    <div class="footer_lists">
+      <!-- Footer Boxes -->
+      <!-- First Box -->
+      <div class="first-list-box">
+        <h3 class="first-heading">
+          Home
+        </h3>
+        <ul class="first-list">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Places</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+      <!-- Second Box -->
+      <div class="second-list-box">
+        <h3 class="second-heading">
+          Practice Area
+        </h3>
+        <ul class="second-list">
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Popular places</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Tour</a></li>
+          <li><a href="#">Family Vacation</a></li>
+        </ul>
+      </div>
+      <!-- Third Box -->
+      <div class="third-list-box">
+        <h3 class="third-heading">
+          Services
+        </h3>
+        <ul class="third-list">
+          <li><a href="#">Tour</a></li>
+          <li><a href="#">Swimming</a></li>
+          <li><a href="#">Kayak</a></li>
+          <li><a href="#">Surfing</a></li>
+        </ul>
+      </div>
+      <!-- Fourth Box -->
+      <div class="fourth-list-box">
+        <h3 class="fourth-heading">
+          Contact
+        </h3>
+        <ul class="fourth-list">
+          <li>43 Raymouth Rd. Baltemoer, London 3910</li>
+          <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+          <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+          <li><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
+        </ul>
+        <h3 class="second-fourth-heading">
+          Connect
+        </h3>
+        <ul class="second-fourth-list">
+          <li><a href="#">
+            <span class="icons">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </a></li>
+          <li><a href="#">
+            <span class="icons">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a></li>
+          <li><a href="#">
+            <span class="icons">
+              <i class="fab fa-facebook-f"></i>
+            </span>
+          </a></li>
+          <li><a href="#">
+            <span class="icons">
+              <i class="fab fa-linkedin-in"></i>
+            </span>
+          </a></li>
+          <li><a href="#">
+            <span class="icons">
+              <i class="fab fa-pinterest"></i>
+            </span>
+          </a></li>
+          <li><a href="#">
+            <span class="icons">
+              <i class="fas fa-basketball-ball"></i>
+            </span>
+          </a></li>
+        </ul>
+      </div>     
+    </div>
+    <!-- CopyRight Part -->
+    <div class="copright">
+    Copyright © 2022 All rights reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib
+    </div>
+  </div>
+</footer>
+<!-- ================End Footer=============== -->
+<!-- Js Part - Script Part -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="./main.js"></script>
+    <script src="./index.js"></script>
+<!-- End Js scripts -->
+    <script
+      src="https://kit.fontawesome.com/e17dd8c95a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End Icon script -->
+  </body>
+  <!-- End Body -->
+</html>
